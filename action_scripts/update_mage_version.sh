@@ -27,7 +27,7 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
   git add XMAGE_VERSION && \
   git commit -m "update xmage version to ${mage_version}" && \
   git tag -a ${mage_version} -m "XMage Beta Version ${mage_version}" && \
-  git push origin master && \
+  git push origin main && \
   git push origin ${mage_version} && \
   echo "\o/"
 else
