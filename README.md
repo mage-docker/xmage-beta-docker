@@ -51,6 +51,27 @@ If you like to preserve the database during updates and restarts you can mount a
         xmage-saved:
             driver: local
 
+## Config Variables
+
+| Variable                                | Default Value   |
+| --------------------------------------- | --------------- |
+| `XMAGE_DOCKER_SERVER_ADDRESS`           |`"0.0.0.0"`      |
+| `XMAGE_DOCKER_PORT`                     | `"17171"`       |
+| `XMAGE_DOCKER_SEONDARY_BIND_PORT`       | `"17179"`       |
+| `XMAGE_DOCKER_MAX_SECONDS_IDLE`         | `"600"`         |
+| `XMAGE_DOCKER_AUTHENTICATION_ACTIVATED` | `"false"`       |
+| `XMAGE_DOCKER_SERVER_NAME`              | `"mage-server"` |
+| `XMAGE_DOCKER_JAVA_OPTS`                | `"-Xmx1024m -XX:MaxPermSize=384m -Dlog4j.configuration=file:./config/log4j.properties"` |
+|  `XMAGE_DOCKER_MAILGUN_API_KEY`         | `""`            |
+|  `XMAGE_DOCKER_MAILGUN_DOMAIN`          | `""`            |
+|  `XMAGE_DOCKER_MAIL_SMTP_HOST`          | `""`            |
+|  `XMAGE_DOCKER_MAIL_SMTP_PORT`          | `""`            |
+|  `XMAGE_DOCKER_MAIL_USER`               | `""`            |
+|  `XMAGE_DOCKER_MAIL_PASSWORD`           | `""`            |
+|  `XMAGE_DOCKER_MAIL_FROM_ADDRESS`       | `""`            |
+|  `XMAGE_DOCKER_MAX_GAME_THREADS`        | `"10"`          |
+|  `XMAGE_DOCKER_MAX_AI_OPPONENTS`        | `"15"`          |
+
 ## Links
 
 [Tutorial - Running XMage on DigitalOcean](https://github.com/goesta/docker-xmage-alpine/wiki/DigitalOcean-Tutorial)
